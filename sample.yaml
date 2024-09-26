@@ -1,0 +1,53 @@
+# Sample YAML configuration file
+
+application:
+  name: MyApp
+  version: 1.0.0
+  environment: development
+  debug: true
+
+database:
+  host: localhost
+  port: 5432
+  username: user123
+  password: password123
+  dbname: myapp_db
+
+logging:
+  level: debug
+  log_file: /var/log/myapp.log
+  rotation:
+    size: 10MB
+    retention: 30d
+    compress: true
+
+api_keys:
+  google_maps: your-google-maps-api-key
+  sendgrid: your-sendgrid-api-key
+
+services:
+  - name: authentication
+    url: https://auth.myapp.com
+    enabled: true
+  - name: analytics
+    url: https://analytics.myapp.com
+    enabled: false
+
+features:
+  enable_login: true
+  enable_registration: true
+  enable_notifications: false
+
+users:
+  admin:
+    username: admin
+    password: supersecret
+    roles:
+      - admin
+      - editor
+  guest:
+    username: guest
+    password: guestpass
+    roles:
+      - viewer
+
