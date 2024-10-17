@@ -27,3 +27,8 @@
       service:
         name: httpd
         state: started
+    - name: Ensure Apache is running
+      service:
+        name: httpd
+        state: stopped    
+    
