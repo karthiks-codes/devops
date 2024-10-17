@@ -1,21 +1,9 @@
 ---
-    - name: Install Apache on AWS EC2
-      hosts: aws_instances
-      become: yes  # Ensures root privileges
-      tasks:
-        - name: Update all packages
-          yum:
-            name: "*"
-            state: latest
-    
-        - name: Install Apache (httpd)
-          yum:
-            name: httpd
-            state: present
-    
-        - name: Start and enable Apache
-          service:
-            name: httpd
-            state: started
-            enabled: yes
-    
+  - hosts: aws_instances
+    become: true
+    tasks:
+      - name: Install Apache HTTP Server
+        yum:
+          name: httpd
+          state: present
+  
