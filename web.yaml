@@ -16,7 +16,7 @@
 
     - name: Copy static website files to the web server document root
       copy:
-        src: /root/mine/static_website/
+        src: /root/mine/stat/
         dest: /var/www/html/
         owner: apache
         group: apache
