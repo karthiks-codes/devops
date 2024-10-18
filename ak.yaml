@@ -6,4 +6,4 @@
     - name: install git
       yum:
         name: git
-        state: latest
+        state: absent
