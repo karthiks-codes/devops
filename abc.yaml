@@ -1,5 +1,5 @@
 ---
-  - hosts: clients
+  - hosts: aws_instances
     become: true
     tasks:
       - name: Install Apache HTTP Server
