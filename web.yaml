@@ -30,9 +30,5 @@
     - name: Ensure Apache is running
       service:
         name: httpd
-        state: stopped  
-    - name: Install Apache HTTP server
-      yum:
-        name: httpd
-        state: absent
+        state: stopped    
     
