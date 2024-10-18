@@ -1,0 +1,11 @@
+[clients]
+client1 ansible_host=52.66.239.15 ansible_user=ec2-user
+client2 ansible_host=13.201.102.204 ansible_user=ec2-user
+client3 ansible_host=3.110.224.19 ansible_user=ec2-user
+client4 ansible_host=3.111.40.0 ansible_user=ec2-user
+client5 ansible_host=3.110.44.202 ansible_user=ec2-user
+client6 ansible_host=65.2.127.200 ansible_user=ec2-user
+client7 ansible_host=13.201.166.203 ansible_user=ec2-user
+client8 ansible_host=13.233.139.218 ansible_user=ec2-user
+client9 ansible_host=3.110.194.35 ansible_user=ec2-user
+client10 ansible_host=65.0.135.23 ansible_user=ec2-user
